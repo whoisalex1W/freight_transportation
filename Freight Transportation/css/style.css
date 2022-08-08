@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*---Nulling styles---*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__top {
+    height: 45px;
+    text-decoration: none;
+    background-color: #C8A35F;
+    color: white;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.header__content {
+    background-color: #2F343A;
+}
+
+.header-top__flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__lang li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.header__lang li:hover{
+    opacity: 1;
+}
+
+.header__lang li:not(:first-child){
+    padding-left: 10px;
+}
+
+.header__content-inside {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header__logo * {
+    display: inline-block;
+}
+
+.header__logo .header__offices,.header__content-inside>.menu {
+    color: white;
+}
+
+.header__logo,.header__offices{
+    display: flex;
+    align-items: center;
+}
+
+.header__offices img{
+    padding-right: 10px;
+}
+
+.header__line{
+    padding: 0 30px;
+}
+
+.header__content-inside li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.freight-transport {
+    background: url('../img/Rectangle2.png');
+    height: 620px;
+    color: white;
+    text-align: center;
+}
+
+.freight-transport__head {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-top: 200px;
+}
+
+.freight-transport__text {
+    padding-top: 45px;
+    max-width: 777px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 140px;
+}
+
+.freight-transport__mouse {
+    margin-bottom: 50px;
+}
+
+.europe-transportation {
+    height: 561px;
+    background-color: #393F47;
+    padding: 130px 0;
+    color: white;
+    background-image: url('../img/background-ractangle-dark.png');
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 40px 0 30px 0;
+}
+
+.europe-transportation__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.europe-transportatio__about {
+    margin: 50px 0 129px 0;
+    height: 55px;
+    width: 220px;
+    background-color: #C8A35F;
+    text-align: center;
+    padding-top: 19px;
+}
+
+.europe-transportation-left {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.europe-transportation-right {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A35F
+}
+
+.europe-transportation-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.europe-transportatio__about a:visited {
+    color: white;
+}
+
+.europe-transportation-right .next::after {
+    position: relative;
+    top: 5px;
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 67px 24x;
+    display: inline-block;
+    width: 67px;
+    height: 24px;
+    content: "";
+    margin-left: 31px;
+}
+
+.europe-transportation-right .prev::before {
+    position: relative;
+    top: 5px;
+    background-image: url('../img/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-size: 67px 24x;
+    display: inline-block;
+    width: 67px;
+    height: 24px;
+    content: "";
+    margin-right: 31px;
+}
+
+.services {
+    background-color: #2F343A;
+    color: white;
+    padding-top: calc(1446px - 1326px);
+}
+
+.services__title {
+    padding-bottom: calc(1589px - 1529px);
+}
+
+.services-blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.air-transport {
+    width: 269px;
+    height: 180px;
+    background-color: #393F47;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.plane-white-circle{
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    margin: 35px 0 23px;
+    width: 70px;
+    height: 70px;
+    background-color: #393F47;
+    border-radius: 50%;
+    justify-self: center;
+    transition: 200ms;
+}
+
+.plane-white-circle svg{
+    fill: aliceblue;
+}
+
+.air-transport:hover .plane-white-circle{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    justify-self: center;
+    transition: 200ms;
+}
+
+.air-transport:hover .plane-white-circle path{
+    fill: black;
+    transition: 200ms;
+}
+
+.air-transport:hover {
+    background-color: #C8A35F;
+    transition: 200ms;
+}
+
+.about-company {
+    background-color: #2F343A;
+    color: white;
+    padding-top: calc(2070px - 1950px);
+    padding-bottom: calc(2070px - 1950px);
+    position: relative;
+    background-image: url('../img/background-ractangle.png');
+    background-repeat: no-repeat;
+    background-position: center 120px;
+}
+
+.about-company__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    width: 445px;
+}
+
+.about-company-header {
+    display: flex;
+    padding-top: calc(2150px - 2070px);
+}
+
+.about-company-header-left {
+    width: 500px;
+}
+
+.about-company-header-right {
+    position: relative;
+    width: 600px;
+}
+
+.about-company__blocks {
+    width: 610px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-block {
+    width: 200px;
+    height: 160px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 0.01em solid #C8A35F;
+}
+
+.about-block img{
+    width: 100%;
+}
+
+.about-block_number {
+    padding-top: 23px;
+}
+
+.about-block__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.about-block__text-small{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    padding-top: 10px;
+}
+
+#text-small-workers{
+    padding-top: 5px;
+}
+
+#workers-number {
+    font-size: 55px;
+    padding-top: 31px;
+}
+
+/*---FOOTER---*/
+
+.footer{
+    height: 161px;
+    background-color: #C8A35F;
+    justify-content: center;
+    padding-top: 59px;
+}
+
+.footer-location-post{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.footer-left, .footer-right{
+    width: 50%;
+    float: left;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.numbers, .developed-by{
+    display: inline-block;
+}
+
+.developed-by{
+    text-decoration: underline;
+}
+
+.footer-location-post p{
+    margin: 10px;
+}
+
+.numbers p{
+    margin: 10px;
+}
+
+#footer-location ,.numbers{
+    color: white;
+}
